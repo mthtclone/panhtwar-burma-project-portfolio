@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #000000;  
+}
+
+:root {
+  --text-font:  "Inter", sans-serif;
+  --ibm-plex: "IBM Plex Serif", serif;
+}
+
+body {
+  background: #f9f9f9f9;
+}
+header {
+  width: 90%;
+  padding: 16px 40px;
+  margin: 0 auto;
+}
+
+nav {
+  font-family: var(--text-font);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+}
+
+.flx-one h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.flx-two ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; 
+}
+
+.flx-two a {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.flx-two a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  margin: 5rem auto;
+  max-width: 900px;
+}
+
+main h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+main img {
+  margin: 3rem;
+}
+
+main blockquote {
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  max-width: 500px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border-radius: 20px;
+  font-style: italic;
+  background-color: #ffffff;
+}
+
+main h2 {
+  font-family: var(--text-font);
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin: 3rem 0 1.5rem 0;
+}
+
+main p {
+  font-family: var(--text-font);
+  max-width: 500px;
+  margin: 1.2rem auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+.closing-quote {
+  margin: 4rem auto 2rem auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.closing-quote blockquote {
+  font-size: 1.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.quote-source {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+  font-family: var(--text-font);
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  text-align: left;
+}
+
+.footer-content h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+}
+
+/* /////// */
+.text-body {
+  text-align: center;
+  margin: 5rem auto;
+  max-width: 900px;
+}
+
+.table-of-contents {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.table-of-contents h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 350;
+  font-family: var(--ibm-plex);
+  margin: 0;
+}
+
+details {
+  font-family: var(--text-font);
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+details ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.sub-list {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.chapter-section {
+  max-width: 750px;
+  margin: 4rem auto;
+}
+
+.chapter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.chapter-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-family: var(--text-font);
+  text-align: left;
+}
+
+.chapter-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  max-width: none;
+}
+
+.chapter-section h4 {
+  font-size: 1.1rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+  text-align: left;
+  font-family: var(--text-font);
+}
+
+.bullet-list {
+  margin: 1rem 0 2rem 1.5rem;
+  line-height: 1.8;
+}
+
+.bullet-list li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-family: var(--text-font);
+}
+
+.figure-note {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.figure-note img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.figure-note figcaption {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-family: var(--text-font);
+}
+
+.chapter-section h5.finance-title {
+  font-size: 1rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.finance-table th,
+.finance-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.finance-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+
+.highlight-row {
+  font-weight: 600;
+  background-color: #fafafa;
+}
+
+.swot-title {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  font-family: var(--text-font);
+}
+
+.bullet-list {
+  margin: 1rem 0 1.5rem 1.5rem;
+  line-height: 1.8;
+}
+
+.bullet-list li {
+  list-style-type: disc;
+  margin-bottom: 0.6rem;
+}
