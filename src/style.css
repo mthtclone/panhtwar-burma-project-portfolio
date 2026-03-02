@@ -322,3 +322,190 @@ li {
   list-style-type: disc;
   margin-bottom: 0.6rem;
 }
+
+/* Medium screens (tablets, ~768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flx-one,
+  .flx-two {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .flx-two ul {
+    gap: 15px;
+  }
+
+  .flx-two a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    margin: 0.3rem 0;
+    background-color: #000; 
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .flx-two a:hover {
+    background-color: #333;
+    text-decoration: none;
+    transform: scale(1.03);
+  }
+
+  main {
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 600px;
+  }
+
+  .flx-two ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main p,
+  .chapter-section p {
+    font-size: 0.95rem;
+  }
+
+  main blockquote {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    max-width: 95%;
+  }
+
+  .chapter-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .chapter-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .table-of-contents h2 {
+    font-size: 2rem;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .download-btn {
+    padding: 0.7rem 1rem;
+  }
+
+  .text-body {
+    max-width: 600px;
+  }
+}
+
+/* Small screens (mobiles, ~480px) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flx-one,
+  .flx-two {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .flx-two ul {
+    gap: 15px;
+  }
+
+  .flx-two a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    margin: 0.3rem 0;
+    background-color: #000; 
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .flx-two a:hover {
+    background-color: #333;
+    text-decoration: none;
+    transform: scale(1.03);
+  }
+
+  main {
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 250px;
+  }
+
+  .flx-two ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main p,
+  .chapter-section p {
+    font-size: 0.95rem;
+  }
+
+  main blockquote {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    max-width: 95%;
+  }
+
+  .chapter-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .chapter-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .table-of-contents h2 {
+    font-size: 2rem;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .download-btn {
+    padding: 0.7rem 1rem;
+  }
+
+  .text-body {
+    max-width: 250px;
+  }
+}
+
+img,
+.figure-note img,
+.finance-table {
+  max-width: 100%;
+  height: auto;
+}
